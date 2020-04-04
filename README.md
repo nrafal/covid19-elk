@@ -8,12 +8,13 @@ You need `docker` and `make` utility to launch.
 
 To start:
 ```
-@ make start
+$ make start
 ```
 
 To update:
 ```
-@ make update
+
+$ make update
 ```
 
 ## Credits
