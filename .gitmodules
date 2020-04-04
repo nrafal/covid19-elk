@@ -1,0 +1,3 @@
+[submodule "coronavirus"]
+	path = coronavirus
+	url = git@github.com:dtandev/coronavirus.git

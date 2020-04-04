@@ -1,0 +1,30 @@
+{
+  "index_patterns": [
+    "coronavirus"
+  ],
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  },
+  "mappings": {
+    "dynamic_templates": [
+      {
+        "strings": {
+          "match_mapping_type": "string",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "Timestamp": {
+        "type": "date",
+        "format": "dd-MM-yyyy"
+      },
+      "Age": {
+        "type": "integer"
+      }
+    }
+  }
+}
