@@ -15,7 +15,7 @@ services:
         image: docker.elastic.co/logstash/logstash:7.6.2
         volumes: 
             - ./.docker/logstash/conf.d/:/usr/share/logstash/pipeline/
-            - ./coronavirus/data//:/usr/share/logstash/user_data/
+            - ./data/:/usr/share/logstash/user_data/
         depends_on: 
             - elasticsearch
         command: /usr/share/logstash/bin/logstash -f /usr/share/logstash/pipeline/file.conf

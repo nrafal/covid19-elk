@@ -4,12 +4,13 @@ This repository helps you launch ELK stack and quickly play with data collected 
 
 ## Usage
 
-You need `docker` and `make` utility to launch.
+You need `docker` and `make` utility to launch, also `curl` for importing dashboards.
 
 To start:
 ```
 $ make start
 ```
+Basically, it takes timeseries from raw data, adds line numbers and start whole stack. 
 
 Please wait, until your [Kibana](http://localhost:5601) is working properly. After that use
 ```
@@ -20,9 +21,9 @@ to import basic dashboard.
 
 To update:
 ```
-
 $ make update
 ```
+It updates data from repository and then restarts logstash to reindex current data.
 
 ## Credits
 

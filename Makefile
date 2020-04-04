@@ -7,4 +7,4 @@ update: start
 	@docker-compose restart logstash
 
 dashboard:
-	@curl -X POST "localhost:5601/api/saved_objects/_import" -H "kbn-xsrf: true" --form file=@.docker/kibana/coronavirus_dashboard.ndjson
+	@curl -X POST "localhost:5601/api/saved_objects/_import?overwrite=true" -H "kbn-xsrf: true" --form file=@.docker/kibana/coronavirus_dashboard.ndjson
