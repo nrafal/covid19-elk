@@ -8,7 +8,7 @@ You need `docker` and `make` utility to launch.
 
 To start:
 ```
-@ make start
+$ make start
 ```
 
 Please wait, until your [Kibana](http://localhost:5601) is working properly. After that use
@@ -20,7 +20,8 @@ to import basic dashboard.
 
 To update:
 ```
-@ make update
+
+$ make update
 ```
 
 ## Credits
