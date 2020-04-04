@@ -16,7 +16,7 @@ Please wait, until your [Kibana](http://localhost:5601) is working properly. Aft
 ```
 $ make dashboard
 ```
-to import basic dashboard.
+to import [basic dashboard](http://localhost:5601/app/kibana#/dashboard/f6791aa0-7393-11ea-a007-0b2df3562d77).
 
 
 To update:
