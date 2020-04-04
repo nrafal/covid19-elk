@@ -11,6 +11,13 @@ To start:
 @ make start
 ```
 
+Please wait, until your [Kibana](http://localhost:5601) is working properly. After that use
+```
+$ make dashboard
+```
+to import basic dashboard.
+
+
 To update:
 ```
 @ make update

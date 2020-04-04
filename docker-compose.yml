@@ -9,6 +9,8 @@ services:
               - cluster.initial_master_nodes=es01
         ports:
             - "9200:9200"
+        volumes: 
+            - data:/usr/share/elasticsearch/data
     logstash:
         image: docker.elastic.co/logstash/logstash:7.6.2
         volumes: 
@@ -23,3 +25,6 @@ services:
             - elasticsearch
         ports: 
             - "5601:5601"
+volumes: 
+    data:
+        driver: local
